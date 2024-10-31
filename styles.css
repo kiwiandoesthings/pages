@@ -1,0 +1,146 @@
+/* 
+ * Once again. credit to catppuccin (https://github.com/catppuccin/catppuccin) for providing the colors I use for my site
+ * Also behold my terrible fucking code, I'm not a web designer, mind you
+*/
+
+#body {
+    background-color: #a6e3a1;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 20px auto;
+    background-color: #eed49f;
+    border-radius: 40px;
+    box-shadow: 0 2px 10px 3px rgba(0, 0, 0, 0.5);
+}
+
+#navbar-image {
+    width: 60px;
+    height: 60px;
+    margin-right: 15px;
+    clip-path: circle(50% at 52% 53%);
+    object-fit: cover;
+    background-color: #eed49f;
+    border: 2px solid #eed49f;
+}
+
+#ascii-welcome {
+    font-family:"Courier New",Courier,monospace;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.5px;
+    white-space: pre;
+    text-align: center;
+}
+
+.navbar-link {  
+    display: inline-flex;
+    background-color: #fab387;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Arvo";
+    color: #363a4f;
+    gap: 10px;
+    justify-content: space-around;
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+
+.navbar-link:hover {
+    text-decoration: underline;
+    background-color: #f7985d;
+}
+
+.navbar-button {
+    width: 70%;
+    display: flex;
+    margin: 0 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.selected-page {
+    background-color: #f7985d;
+}
+
+.text-container {
+    background-color: #e5c890;
+    border-radius: 15px;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    outline-color: #ef9f76; 
+    outline-width: 3px;
+    outline-style: solid;
+    list-style: none;
+    padding: 10px;
+    box-shadow: 0 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.heading {
+    color: #232634;
+}
+
+.text {
+    white-space: pre-line;
+    position: relative;
+    top: -10px;
+    margin: 10px;
+    font-family: "Arvo";
+    color: #363a4f;
+}
+
+.icon {
+    position: relative;
+    top: -7px;
+    margin-left: 10px;
+    margin-top: 1px;
+    width: 15px;
+    height: 15px;
+}
+
+#canvas {
+    margin: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#game-body {
+    margin: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 25px;
+    max-width: 100%;
+    padding: 15px;
+}
+
+.showcase-image {
+    border-radius: 15px;
+    padding: 0px;
+    border: #363a4f 5px solid;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    image-rendering: pixelated;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s;
+    box-sizing: border-box;
+    display: block;
+}
+
+.showcase-image:hover {
+    /*transform: scale(1.05);*/
+    transform: skewX(-2deg) skewY(-1deg);
+}
