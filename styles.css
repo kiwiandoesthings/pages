@@ -141,6 +141,6 @@
 }
 
 .showcase-image:hover {
-    /*transform: scale(1.05);*/
-    transform: skewX(-2deg) skewY(-1deg);
+    transform: scale(1.05);
+    /*transform: skewX(-2deg) skewY(-1deg);*/
 }
